@@ -28,12 +28,17 @@ struct ContentView: View {
                     })
                 }
             }
-            Button(action: {
-                viewModel.getDogs()
-            }, label: {
-                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-            })
-            
+            HStack {
+                Spacer()
+
+                Button {
+                    viewModel.getDogs()
+                } label: {
+                    Text("Rappel")
+                        .textAspect()
+                }
+                Spacer()
+            }
         }
         .onAppear {
             viewModel.getDogs()
@@ -41,7 +46,7 @@ struct ContentView: View {
     }
     
     private func remove(dog: Chien) {
-        
+        viewModel.removeDog(dog: dog)
     }
 }
 

@@ -16,7 +16,20 @@ class ContentViewModel: ObservableObject {
         chiens = model.dataBase
     }
     
+    private func getIndex(of element: Chien) -> Int? {
+        for (index, dog) in chiens.enumerated() {
+            print("\(dog.name) se trouve à l'index :\(index)")
+            if element.name == dog.name {
+                return index
+            }
+        }
+        return nil
+    }
+    
     func removeDog(dog: Chien) {
-        
+        let index = getIndex(of: dog)
+        if let index {
+            chiens.remove(at: index)
+        }
     }
 }
