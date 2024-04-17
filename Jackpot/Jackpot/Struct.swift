@@ -38,3 +38,39 @@ class Chat {
         self.size = taille
     }
 }
+
+enum AvailableColors: String {
+    
+    static let allCases: [AvailableColors] = [.white, .black, .brown, .yellow, .purple, .green, .gray, .grayAlmostWhite]
+    
+    case white = "blanc"
+    case black = "noir"
+    case brown = "brun"
+    case yellow = "jaune"
+    case purple = "violet"
+    case green = "vert"
+    case gray = "gris"
+    case grayAlmostWhite = "gris-blanc"
+    
+    var color: Color {
+        switch self {
+                
+            case .white:
+                return .white
+            case .black:
+                return .black
+            case .brown:
+                return .brown
+            case .yellow:
+                return .yellow
+            case .purple:
+                return .purple
+            case .green:
+                return .green
+            case .gray:
+                return .gray
+            case .grayAlmostWhite:
+                return Color(cgColor: CGColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1))
+        }
+    }
+}

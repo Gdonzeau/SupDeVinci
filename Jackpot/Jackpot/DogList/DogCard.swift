@@ -11,11 +11,12 @@ struct DogCard: View {
     let name: String
     let poids: Int
     let age: Int
+    let color: Color
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0)
-                .fill(.pink)
+                .fill(color)
                 .frame(width: 250, height: 250)
             
             VStack {
@@ -40,5 +41,5 @@ struct DogCard: View {
 }
 
 #Preview {
-    DogCard(name: "Kiki", poids: 89, age: 3)
+    DogCard(name: "Kiki", poids: 89, age: 3, color: .purple)
 }

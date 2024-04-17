@@ -21,6 +21,7 @@
 		F0D2B58B2BCFBD3000BDD55F /* AddDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B58A2BCFBD3000BDD55F /* AddDogView.swift */; };
 		F0D2B5912BCFCDD500BDD55F /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */; };
 		F0D2B5932BCFD01800BDD55F /* General Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5922BCFD01800BDD55F /* General Data.swift */; };
+		F0D2B5952BCFF9EE00BDD55F /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5942BCFF9EE00BDD55F /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F0D2B58A2BCFBD3000BDD55F /* AddDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogView.swift; sourceTree = "<group>"; };
 		F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
 		F0D2B5922BCFD01800BDD55F /* General Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "General Data.swift"; sourceTree = "<group>"; };
+		F0D2B5942BCFF9EE00BDD55F /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				F0D2B5432BCE9B3200BDD55F /* Model.swift */,
 				F0D2B5922BCFD01800BDD55F /* General Data.swift */,
 				F0D2B53D2BCE705A00BDD55F /* Struct.swift */,
+				F0D2B5942BCFF9EE00BDD55F /* NetworkErrors.swift */,
 				F0D2B5332BCE704400BDD55F /* Assets.xcassets */,
 				F0D2B5352BCE704400BDD55F /* Preview Content */,
 			);
@@ -207,6 +210,7 @@
 				F0D2B5912BCFCDD500BDD55F /* AddDogViewModel.swift in Sources */,
 				F0D2B5802BCFAF6500BDD55F /* MainView.swift in Sources */,
 				F0D2B5322BCE704200BDD55F /* ListDogsView.swift in Sources */,
+				F0D2B5952BCFF9EE00BDD55F /* NetworkErrors.swift in Sources */,
 				F0D2B5482BCEA6C600BDD55F /* Extension+View.swift in Sources */,
 				F0D2B5442BCE9B3200BDD55F /* Model.swift in Sources */,
 				F0D2B5302BCE704200BDD55F /* JackpotApp.swift in Sources */,
