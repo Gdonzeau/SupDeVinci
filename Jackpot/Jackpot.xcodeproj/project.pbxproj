@@ -22,6 +22,7 @@
 		F0D2B5912BCFCDD500BDD55F /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */; };
 		F0D2B5932BCFD01800BDD55F /* General Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5922BCFD01800BDD55F /* General Data.swift */; };
 		F0D2B5952BCFF9EE00BDD55F /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5942BCFF9EE00BDD55F /* NetworkErrors.swift */; };
+		F0D2B5972BD0093200BDD55F /* DogPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5962BD0093200BDD55F /* DogPresentationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
 		F0D2B5922BCFD01800BDD55F /* General Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "General Data.swift"; sourceTree = "<group>"; };
 		F0D2B5942BCFF9EE00BDD55F /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		F0D2B5962BD0093200BDD55F /* DogPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPresentationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				F0D2B5452BCEA03400BDD55F /* DogCard.swift */,
 				F0D2B5312BCE704200BDD55F /* ListDogsView.swift */,
+				F0D2B5962BD0093200BDD55F /* DogPresentationView.swift */,
 				F0D2B5412BCE820F00BDD55F /* ListDogViewModel.swift */,
 			);
 			path = DogList;
@@ -211,6 +214,7 @@
 				F0D2B5802BCFAF6500BDD55F /* MainView.swift in Sources */,
 				F0D2B5322BCE704200BDD55F /* ListDogsView.swift in Sources */,
 				F0D2B5952BCFF9EE00BDD55F /* NetworkErrors.swift in Sources */,
+				F0D2B5972BD0093200BDD55F /* DogPresentationView.swift in Sources */,
 				F0D2B5482BCEA6C600BDD55F /* Extension+View.swift in Sources */,
 				F0D2B5442BCE9B3200BDD55F /* Model.swift in Sources */,
 				F0D2B5302BCE704200BDD55F /* JackpotApp.swift in Sources */,

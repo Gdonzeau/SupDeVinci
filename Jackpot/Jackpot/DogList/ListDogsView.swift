@@ -11,7 +11,9 @@ struct ListDogsView: View {
     
     @StateObject var viewModel = ListDogViewModel()
     @State var showDog: Bool = false
-    var dogToShow: Chien = Chien(name: <#T##String#>, weight: <#T##Int#>, age: <#T##Int#>, color: <#T##Color#>)
+    @State var dogToShow: Chien?
+    
+    //@State var viewToOpen: DogPresentationView?
     
     //let oiseaux: [Oiseau] = [Oiseau(name: "Piaf", hasFlyLicence: false), Oiseau(name: "Titi", hasFlyLicence: true)]
     var body: some View {
@@ -21,7 +23,8 @@ struct ListDogsView: View {
                     Spacer()
                     DogCard(name: dog.name, poids: dog.weight, age: dog.age, color: dog.color)
                         .onTapGesture {
-                            showDogSheet()
+                            dogToShow = dog
+                            showDog = true
                         }
                     Spacer()
                 }
@@ -48,17 +51,19 @@ struct ListDogsView: View {
         .onAppear {
             viewModel.getDogs()
         }
-        .sheet(isPresented: showDog, content: {
-            DogPresentationView(dogToShow) // TODO
-        })
+        .sheet(isPresented: Binding(
+            get: {
+                showDog
+            }, set: { showDog = $0 }
+        )) {
+            if let dogToShow {
+                DogPresentationView(dog: dogToShow)
+            }
+        }
     }
     
     private func remove(dog: Chien) {
         viewModel.removeDog(dog: dog)
-    }
-    
-    private func showDogSheet(dog: Chien) { // TODO
-        
     }
 }
 

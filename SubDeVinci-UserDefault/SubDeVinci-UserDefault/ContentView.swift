@@ -11,8 +11,8 @@ struct ContentView: View {
     @State var tapCount: Int = UserDefaults.standard.integer(forKey: "Tap")
     @State var text: String = UserDefaults.standard.string(forKey: "Text") ?? ""
     
-    var eleve = Eleve(id: 0, name: "", size: 0)
-    
+    @State var eleve = [Eleve(id: 0, name: "", size: 0)]
+    @State var eleves = [Eleve]()
     //@State var eleve = UserDefaults.standard.data(forKey: "Eleve")
     @AppStorage("tapCount") private var tapCount2 = 0
     
@@ -29,18 +29,19 @@ struct ContentView: View {
     private func saveStudent() {
         do {
             let encoder = JSONEncoder()
-            let data = try encoder.encode(eleve)
-            UserDefaults.standard.set(data, forKey: "Eleve")
+            let data = try encoder.encode(eleves)
+            UserDefaults.standard.set(data, forKey: "Eleves")
         } catch {
             print("Error while getting data 'Eleve': (\(error)")
         }
     }
     
-    private func getStudent() {
+    private mutating func getStudent() {
         if let data = UserDefaults.standard.data(forKey: "Eleve") {
             do {
                 let decoder = JSONDecoder()
-                let notes = try decoder.decode([Eleve].self, from: data)
+                let eleves = try decoder.decode([Eleve].self, from: data)
+                self.eleves = eleves
             } catch {
                 print("Unable to Decode Notes (\(error))")
             }
