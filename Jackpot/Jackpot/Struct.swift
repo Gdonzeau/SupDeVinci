@@ -7,11 +7,26 @@
 
 import SwiftUI
 
-struct Chien {
+struct Chien: Identifiable {
+    let id = UUID()
     let name: String
     let weight: Int
     let age: Int
     let color: Color
+    
+    static func == (lhs: Chien, rhs: Chien)-> Bool {
+        lhs.id == rhs.id
+    }
+    
+    static func === (lhs: Chien, rhs: Oiseau) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
+struct Oiseau: Identifiable {
+    let id = UUID()
+    let name: String
+    let hasFlyLicence: Bool
 }
 
 class Chat {

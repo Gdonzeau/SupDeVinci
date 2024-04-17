@@ -1,6 +1,6 @@
 //
-//  JackpotApp.swift
-//  Jackpot
+//  SubDeVinci_UserDefaultApp.swift
+//  SubDeVinci-UserDefault
 //
 //  Created by Guillaume on 16/04/2024.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct JackpotApp: App {
+struct SubDeVinci_UserDefaultApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
         }
     }
 }

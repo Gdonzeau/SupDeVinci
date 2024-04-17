@@ -8,29 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		F0D2B5302BCE704200BDD55F /* JackpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B52F2BCE704200BDD55F /* JackpotApp.swift */; };
-		F0D2B5322BCE704200BDD55F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5312BCE704200BDD55F /* ContentView.swift */; };
+		F0D2B5322BCE704200BDD55F /* ListDogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5312BCE704200BDD55F /* ListDogsView.swift */; };
 		F0D2B5342BCE704400BDD55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B5332BCE704400BDD55F /* Assets.xcassets */; };
 		F0D2B5372BCE704400BDD55F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B5362BCE704400BDD55F /* Preview Assets.xcassets */; };
 		F0D2B53E2BCE705A00BDD55F /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B53D2BCE705A00BDD55F /* Struct.swift */; };
-		F0D2B5402BCE80EF00BDD55F /* TexteACadre.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B53F2BCE80EF00BDD55F /* TexteACadre.swift */; };
-		F0D2B5422BCE820F00BDD55F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5412BCE820F00BDD55F /* ContentViewModel.swift */; };
+		F0D2B5422BCE820F00BDD55F /* ListDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5412BCE820F00BDD55F /* ListDogViewModel.swift */; };
 		F0D2B5442BCE9B3200BDD55F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5432BCE9B3200BDD55F /* Model.swift */; };
 		F0D2B5462BCEA03400BDD55F /* DogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5452BCEA03400BDD55F /* DogCard.swift */; };
 		F0D2B5482BCEA6C600BDD55F /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5472BCEA6C600BDD55F /* Extension+View.swift */; };
+		F0D2B5802BCFAF6500BDD55F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B57F2BCFAF6500BDD55F /* MainView.swift */; };
+		F0D2B5882BCFB68900BDD55F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B5862BCFB68900BDD55F /* Localizable.strings */; };
+		F0D2B58B2BCFBD3000BDD55F /* AddDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B58A2BCFBD3000BDD55F /* AddDogView.swift */; };
+		F0D2B5912BCFCDD500BDD55F /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */; };
+		F0D2B5932BCFD01800BDD55F /* General Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5922BCFD01800BDD55F /* General Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F0D2B52C2BCE704200BDD55F /* Jackpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jackpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D2B52F2BCE704200BDD55F /* JackpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackpotApp.swift; sourceTree = "<group>"; };
-		F0D2B5312BCE704200BDD55F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0D2B5312BCE704200BDD55F /* ListDogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogsView.swift; sourceTree = "<group>"; };
 		F0D2B5332BCE704400BDD55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D2B5362BCE704400BDD55F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0D2B53D2BCE705A00BDD55F /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
-		F0D2B53F2BCE80EF00BDD55F /* TexteACadre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexteACadre.swift; sourceTree = "<group>"; };
-		F0D2B5412BCE820F00BDD55F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		F0D2B5412BCE820F00BDD55F /* ListDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDogViewModel.swift; sourceTree = "<group>"; };
 		F0D2B5432BCE9B3200BDD55F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F0D2B5452BCEA03400BDD55F /* DogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCard.swift; sourceTree = "<group>"; };
 		F0D2B5472BCEA6C600BDD55F /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		F0D2B57F2BCFAF6500BDD55F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F0D2B5872BCFB68900BDD55F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0D2B5892BCFB69000BDD55F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0D2B58A2BCFBD3000BDD55F /* AddDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogView.swift; sourceTree = "<group>"; };
+		F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
+		F0D2B5922BCFD01800BDD55F /* General Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "General Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +72,14 @@
 		F0D2B52E2BCE704200BDD55F /* Jackpot */ = {
 			isa = PBXGroup;
 			children = (
+				F0D2B58F2BCFCD8100BDD55F /* Extensions */,
+				F0D2B58E2BCFCD6E00BDD55F /* Utilitaires */,
+				F0D2B58D2BCFBD6F00BDD55F /* DogList */,
+				F0D2B58C2BCFBD6100BDD55F /* AddDog */,
 				F0D2B52F2BCE704200BDD55F /* JackpotApp.swift */,
-				F0D2B5312BCE704200BDD55F /* ContentView.swift */,
-				F0D2B5412BCE820F00BDD55F /* ContentViewModel.swift */,
+				F0D2B57F2BCFAF6500BDD55F /* MainView.swift */,
 				F0D2B5432BCE9B3200BDD55F /* Model.swift */,
-				F0D2B53F2BCE80EF00BDD55F /* TexteACadre.swift */,
-				F0D2B5452BCEA03400BDD55F /* DogCard.swift */,
-				F0D2B5472BCEA6C600BDD55F /* Extension+View.swift */,
+				F0D2B5922BCFD01800BDD55F /* General Data.swift */,
 				F0D2B53D2BCE705A00BDD55F /* Struct.swift */,
 				F0D2B5332BCE704400BDD55F /* Assets.xcassets */,
 				F0D2B5352BCE704400BDD55F /* Preview Content */,
@@ -83,6 +93,41 @@
 				F0D2B5362BCE704400BDD55F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0D2B58C2BCFBD6100BDD55F /* AddDog */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B58A2BCFBD3000BDD55F /* AddDogView.swift */,
+				F0D2B5902BCFCDD500BDD55F /* AddDogViewModel.swift */,
+			);
+			path = AddDog;
+			sourceTree = "<group>";
+		};
+		F0D2B58D2BCFBD6F00BDD55F /* DogList */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B5452BCEA03400BDD55F /* DogCard.swift */,
+				F0D2B5312BCE704200BDD55F /* ListDogsView.swift */,
+				F0D2B5412BCE820F00BDD55F /* ListDogViewModel.swift */,
+			);
+			path = DogList;
+			sourceTree = "<group>";
+		};
+		F0D2B58E2BCFCD6E00BDD55F /* Utilitaires */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B5862BCFB68900BDD55F /* Localizable.strings */,
+			);
+			path = Utilitaires;
+			sourceTree = "<group>";
+		};
+		F0D2B58F2BCFCD8100BDD55F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B5472BCEA6C600BDD55F /* Extension+View.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +172,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = F0D2B5232BCE704200BDD55F;
 			productRefGroup = F0D2B52D2BCE704200BDD55F /* Products */;
@@ -144,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D2B5372BCE704400BDD55F /* Preview Assets.xcassets in Resources */,
+				F0D2B5882BCFB68900BDD55F /* Localizable.strings in Resources */,
 				F0D2B5342BCE704400BDD55F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,17 +203,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D2B53E2BCE705A00BDD55F /* Struct.swift in Sources */,
-				F0D2B5322BCE704200BDD55F /* ContentView.swift in Sources */,
+				F0D2B5932BCFD01800BDD55F /* General Data.swift in Sources */,
+				F0D2B5912BCFCDD500BDD55F /* AddDogViewModel.swift in Sources */,
+				F0D2B5802BCFAF6500BDD55F /* MainView.swift in Sources */,
+				F0D2B5322BCE704200BDD55F /* ListDogsView.swift in Sources */,
 				F0D2B5482BCEA6C600BDD55F /* Extension+View.swift in Sources */,
-				F0D2B5402BCE80EF00BDD55F /* TexteACadre.swift in Sources */,
 				F0D2B5442BCE9B3200BDD55F /* Model.swift in Sources */,
 				F0D2B5302BCE704200BDD55F /* JackpotApp.swift in Sources */,
 				F0D2B5462BCEA03400BDD55F /* DogCard.swift in Sources */,
-				F0D2B5422BCE820F00BDD55F /* ContentViewModel.swift in Sources */,
+				F0D2B58B2BCFBD3000BDD55F /* AddDogView.swift in Sources */,
+				F0D2B5422BCE820F00BDD55F /* ListDogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0D2B5862BCFB68900BDD55F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0D2B5872BCFB68900BDD55F /* fr */,
+				F0D2B5892BCFB69000BDD55F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F0D2B5382BCE704400BDD55F /* Debug */ = {
@@ -302,8 +364,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,8 +393,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ListDogsView.swift
 //  Jackpot
 //
 //  Created by Guillaume on 16/04/2024.
@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @StateObject var viewModel = ContentViewModel()
+struct ListDogsView: View {
     
+    @StateObject var viewModel = ListDogViewModel()
+    
+    //let oiseaux: [Oiseau] = [Oiseau(name: "Piaf", hasFlyLicence: false), Oiseau(name: "Titi", hasFlyLicence: true)]
     var body: some View {
         VStack {
             
-            List(viewModel.chiens, id: \.name){ dog in
+            List(viewModel.chiens){ dog in
                 HStack {
                     Spacer()
                     DogCard(name: dog.name, poids: dog.weight, age: dog.age)
@@ -51,5 +53,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ListDogsView()
 }

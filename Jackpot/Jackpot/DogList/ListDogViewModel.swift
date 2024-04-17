@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ContentViewModel: ObservableObject {
-    var model = Model()
+class ListDogViewModel: ObservableObject {
+    var model = Model.shared
     var received: Bool = false
     @Published var chiens: [Chien] = []
     
@@ -31,5 +31,6 @@ class ContentViewModel: ObservableObject {
         if let index {
             chiens.remove(at: index)
         }
+        model.dataBase = chiens
     }
 }

@@ -15,4 +15,8 @@ extension View {
             .background(LinearGradient(colors: [.red, .green, .blue], startPoint: .bottomTrailing, endPoint: .topLeading))
             .clipShape(RoundedRectangle(cornerRadius: 25))
     }
+    
+    func aspectButton() {
+        self
+    }
 }
