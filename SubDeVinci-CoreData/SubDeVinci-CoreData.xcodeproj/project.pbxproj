@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F0409C852BD0EA03007FDC4B /* StorageStudents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0409C832BD0EA03007FDC4B /* StorageStudents.xcdatamodeld */; };
+		F0409CFE2BD15F02007FDC4B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0409CFD2BD15F02007FDC4B /* ContentViewModel.swift */; };
 		F0D2B5A52BD0786A00BDD55F /* SubDeVinci_CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5A42BD0786A00BDD55F /* SubDeVinci_CoreDataApp.swift */; };
 		F0D2B5A72BD0786A00BDD55F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5A62BD0786A00BDD55F /* ContentView.swift */; };
 		F0D2B5A92BD0786C00BDD55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B5A82BD0786C00BDD55F /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		F0409C842BD0EA03007FDC4B /* StorageStudents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StorageStudents.xcdatamodel; sourceTree = "<group>"; };
+		F0409CFD2BD15F02007FDC4B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F0D2B5A12BD0786A00BDD55F /* SubDeVinci-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SubDeVinci-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D2B5A42BD0786A00BDD55F /* SubDeVinci_CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDeVinci_CoreDataApp.swift; sourceTree = "<group>"; };
 		F0D2B5A62BD0786A00BDD55F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				F0D2B5A42BD0786A00BDD55F /* SubDeVinci_CoreDataApp.swift */,
 				F0D2B5A62BD0786A00BDD55F /* ContentView.swift */,
+				F0409CFD2BD15F02007FDC4B /* ContentViewModel.swift */,
 				F0D2B5B72BD0797500BDD55F /* DataController.swift */,
 				F0409C832BD0EA03007FDC4B /* StorageStudents.xcdatamodeld */,
 				F0D2B5A82BD0786C00BDD55F /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				F0D2B5B82BD0797500BDD55F /* DataController.swift in Sources */,
 				F0D2B5A52BD0786A00BDD55F /* SubDeVinci_CoreDataApp.swift in Sources */,
 				F0409C852BD0EA03007FDC4B /* StorageStudents.xcdatamodeld in Sources */,
+				F0409CFE2BD15F02007FDC4B /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

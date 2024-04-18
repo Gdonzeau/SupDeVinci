@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-
-    @Environment(\.managedObjectContext) var context
-    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
     
+    @StateObject var viewModel = ContentViewModel()
+   // @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
+    @State var students: [Student] = []
     var body: some View {
         VStack {
             List(students) { student in
@@ -27,33 +27,23 @@ struct ContentView: View {
             .background(.blue)
             
             Button("Save") {
-                let registeredStudent = Student(context: context)
-                registeredStudent.id = UUID()
-                registeredStudent.name = "Test"
-                //try? context.save()
-                
-                do {
-                    try context.save()
-                    // Série d'actions dont certaines peuvent engendrer des erreurs
-                } catch {
-                    // En cas d'erreur, exécuter cette partie
-                    print("Je n'ai pas réussi à sauvegarder les données: \(error)")
-                }
-                //name = "" // On vide après appui sur le bouton
+                viewModel.saveStudent(name: "Albert")
+                actualize()
             }
             
             Spacer()
+        }
+        .onAppear() {
+            actualize()
         }
         .padding()
     }
     
     func remove(student: Student) {
-        context.delete(student)
-        do {
-            try context.save()
-        } catch {
-            print("Error while deleting: \(error)")
-        }
+        viewModel.deleteStudent(student: student)
+    }
+    func actualize() {
+        students = viewModel.getAllStudents()
     }
 }
 

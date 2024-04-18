@@ -9,13 +9,13 @@ import SwiftUI
 
 @main
 struct SubDeVinci_CoreDataApp: App {
-    @StateObject private var dataController = DataController()
+    //@StateObject private var dataController = DataController.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
             // Environnement : Data de base au lancement de l'application
-                .environment(\.managedObjectContext, dataController.container.viewContext)
+                //.environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
