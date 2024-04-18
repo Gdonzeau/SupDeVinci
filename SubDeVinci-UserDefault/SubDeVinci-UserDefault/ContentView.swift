@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var tapCount: Int = UserDefaults.standard.integer(forKey: "Tap")
     @State var text: String = UserDefaults.standard.string(forKey: "Text") ?? ""
     
-    @State var eleve = [Eleve(id: 0, name: "", size: 0)]
+    @State var eleve = [Eleve(name: "", size: 0)]
     @State var eleves = [Eleve]()
     //@State var eleve = UserDefaults.standard.data(forKey: "Eleve")
     @AppStorage("tapCount") private var tapCount2 = 0
@@ -54,7 +54,7 @@ struct ContentView: View {
 }
 
 struct Eleve: Codable {
-    let id: Int
+    var id = UUID()
     let name: String
     let size: Int
 }
